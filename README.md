@@ -1,5 +1,4 @@
-# Eco Journey — Desa Samiran
-
+# D`Samiran
 Deskripsi singkat
 - Situs statis untuk memperkenalkan Desa Wisata Samiran: profil desa, atraksi, fasilitas, galeri, ekosistem, FAQ, dan kontak. Dirancang sebagai landing page informatif yang responsif dan ringan.
 
