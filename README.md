@@ -17,7 +17,6 @@ Font
 - Menggunakan `Montserrat` (Google Fonts) untuk keseluruhan tipografi.
 
 Teknologi dan framework
-- Murni HTML, CSS, dan JavaScript (tidak memakai framework seperti React/Vue/Angular).
 - Struktur modul JS: ada bundel modul di `js/` (mis. `js/main.js`) dan fallback `script.js` untuk pemakaian lewat protokol file.
 
 Warna utama (variabel CSS)
@@ -29,7 +28,7 @@ Warna utama (variabel CSS)
 - `--text`: #17363a (warna teks utama)
 - `--muted`: #5f6f72 (teks sekunder)
 
-Struktur direktori (ringkasan)
+Struktur direktori
 - `index.html` — halaman utama.
 - `css/` — stylesheet utama `main.css` dan file pendukung.
 - `js/` — modul JavaScript (UI, timeline, carousel, modal, dll.).
@@ -44,21 +43,11 @@ Cara pakai (dari GitHub)
    cd <repo-folder>
 
 2. Menjalankan secara lokal (pilih salah satu):
-- Buka langsung: buka `index.html` di browser. (Perhatikan: beberapa fitur modul ES mungkin membutuhkan server.)
-- Jalankan server sederhana (rekomendasi):
-
-  - Python 3:
-
-    python -m http.server 8000
-
-    lalu buka http://localhost:8000
-
-  - VS Code: gunakan extension Live Server dan pilih `Open with Live Server` pada `index.html`.
+- Buka langsung: buka `index.html` di browser.
+- VS Code: gunakan extension Live Server dan pilih `Open with Live Server` pada `index.html`.
 
 3. Catatan skrip:
 - `index.html` memuat `js/main.js` sebagai modul pada mode server. Jika file dibuka langsung (`file:`), ada fallback ke `script.js`.
-
-Tidak perlu langkah build. Cukup host di server statis (GitHub Pages, Netlify, Vercel, atau S3).
 
 Kelebihan dan keuntungan
 - Ringan dan cepat: tidak ada dependensi bundler atau framework besar.
@@ -66,11 +55,3 @@ Kelebihan dan keuntungan
 - Mudah di-host: bisa langsung dipasang di GitHub Pages atau server statis.
 - Responsif: CSS diatur untuk beberapa breakpoint agar tampil baik pada desktop, laptop, tablet, dan ponsel.
 - Modularitas: JS dipisah menjadi modul yang memudahkan pengembangan fitur (timeline, modal, carousel).
-
-Rekomendasi pengembangan berikutnya
-- Tambahkan optimisasi gambar (ukuran/responsive srcset) untuk perfomance lebih baik.
-- Tambahkan unit tests ringan atau linting untuk menjaga konsistensi kode.
-- Pertimbangkan migrasi `config/content.js` ke format JSON jika akan disunting oleh non-developer.
-
-Kontak untuk pengembangan
-- Jika ingin saya bantu tambah fitur (form submission, i18n, PWA, atau optimasi gambar), beri tahu bagian mana yang ingin dikembangkan.
